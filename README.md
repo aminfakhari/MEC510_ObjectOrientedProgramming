@@ -1,1 +1,2 @@
 # MEC510: Object-Oriented Programming for Scientists and Engineers
+The codes are based on the book **C++ How to Program** (10th Edition) written by Paul J. Deitel, Harvey M. Deitel, and published by Pearson, 2016.
