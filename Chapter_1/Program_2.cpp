@@ -1,7 +1,6 @@
 // Addition program that displays the sum of two integers.
-#include <iostream> // enables program to perform input and output
+#include <iostream>
 
-// function main begins program execution
 int main() {
    // declaring and initializing variables
    int number1{0}; // first integer to add (initialized to 0)  
@@ -17,4 +16,4 @@ int main() {
    sum = number1 + number2; // add the numbers; store result in sum
 
    std::cout << "Sum is " << sum << std::endl; // display sum; end line
-} // end function main
+}
