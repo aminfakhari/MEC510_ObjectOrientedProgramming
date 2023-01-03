@@ -2,11 +2,10 @@
 #include <string>
 
 class Student {
+	
 public:
    // constructor initializes data members
-   Student(std::string studentName, int studentAverage)
-      : name(studentName) {
-
+   Student(std::string studentName, int studentAverage) : name{studentName} {
       // sets average data member if studentAverage is valid
       setAverage(studentAverage); 
    }
@@ -14,11 +13,6 @@ public:
    // sets the Student's name
    void setName(std::string studentName) {
       name = studentName; 
-   }
-
-   // retrieves the Student's name
-   std::string getName() const {
-      return name;
    }
 
    // sets the Student's average
@@ -30,6 +24,11 @@ public:
             average = studentAverage; // assign to data member
          }
       }
+   }
+   
+   // retrieves the Student's name
+   std::string getName() const {
+      return name;
    }
 
    // retrieves the Student's average
@@ -60,6 +59,7 @@ public:
 
       return letterGrade;
    }
+   
 private: 
    std::string name; 
    int average{0}; // initialize average to 0
