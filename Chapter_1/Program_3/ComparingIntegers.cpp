@@ -15,8 +15,9 @@ int main() {
    cout << "Enter 2nd integer to compare: ";
    cin >> number2;
 
-   if (number1 == number2)
+   if (number1 == number2){
       cout << number1 << " == " << number2 << endl;
+   }
 
    if (number1 < number2) {
       cout << number1 << " != " << number2 << endl;

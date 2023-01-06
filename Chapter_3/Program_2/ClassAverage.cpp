@@ -1,6 +1,5 @@
 // Solving the class-average problem using counter-controlled iteration.
 #include <iostream>
-using namespace std;
 
 int main() {
    // initialization phase
@@ -9,9 +8,9 @@ int main() {
 
    // processing phase uses counter-controlled iteration
    while (gradeCounter <= 10) { // loop 10 times
-      cout << "Enter grade: "; // prompt 
+      std::cout << "Enter grade: "; // prompt 
       int grade;
-      cin >> grade; // input next grade
+      std::cin >> grade; // input next grade
       total = total + grade; // add grade to total
       gradeCounter = gradeCounter + 1; // increment counter by 1
    } 
@@ -20,6 +19,6 @@ int main() {
    int average{total / 10}; // int division yields int result
 
    // display total and average of grades
-   cout << "\nTotal of all 10 grades is " << total;
-   cout << "\nClass average is " << average << endl;
+   std::cout << "\nTotal of all 10 grades is " << total;
+   std::cout << "\nClass average is " << average << std::endl;
 }

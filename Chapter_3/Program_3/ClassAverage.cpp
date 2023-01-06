@@ -1,7 +1,6 @@
 // Solving the class-average problem using sentinel-controlled iteration. 
 #include <iostream>
 #include <iomanip> // parameterized stream manipulators  
-using namespace std;
 
 int main() {
    // initialization phase
@@ -10,9 +9,9 @@ int main() {
    
    // processing phase
    // prompt for input and read grade from user
-   cout << "Enter grade or -1 to quit: "; 
+   std::cout << "Enter grade or -1 to quit: "; 
    int grade; 
-   cin >> grade; 
+   std::cin >> grade; 
 
    // loop until sentinel value read from user
    while (grade != -1)  {
@@ -20,8 +19,8 @@ int main() {
       gradeCounter = gradeCounter + 1; // increment counter 
 
       // prompt for input and read next grade from user
-      cout << "Enter grade or -1 to quit: "; 
-      cin >> grade; 
+      std::cout << "Enter grade or -1 to quit: "; 
+      std::cin >> grade; 
    }
 
    // termination phase
@@ -31,12 +30,12 @@ int main() {
       double average{static_cast<double>(total) / gradeCounter};
 
       // display total and average (with two digits of precision)
-      cout << "\nTotal of the " << gradeCounter 
+      std::cout << "\nTotal of the " << gradeCounter 
          << " grades entered is " << total;
-      cout << setprecision(2) << fixed; 
-      cout << "\nClass average is " << average << endl; 
+      std::cout << setprecision(2) << fixed; 
+      std::cout << "\nClass average is " << average << std::endl; 
    } 
    else { // no grades were entered, so output appropriate message
-      cout << "No grades were entered" << endl; 
+      std::cout << "No grades were entered" << std::endl; 
    }
 }
