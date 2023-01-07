@@ -31,6 +31,6 @@ int main() {
 
    // determine whether more than 8 students passed
    if (passes > 8) {
-      std::cout << "Bonus to instructor!" << std::endl;
+      std::cout << "Congratulations!" << std::endl;
    }
 }
