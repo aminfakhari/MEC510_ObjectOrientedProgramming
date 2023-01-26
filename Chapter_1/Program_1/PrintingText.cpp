@@ -1,4 +1,5 @@
-// Text-printing program.
+/* First Program in C++
+Text-printing program. */
 #include <iostream> // enables program to output data to the screen
 
 // function main begins program execution
